@@ -1,0 +1,154 @@
+body {
+    word-break: break-all;
+    padding-top: 1em;
+}
+
+#dataSection {
+    display: none;
+}
+.userDetails{
+    border:2px solid #333;border-radius: 0.5em;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.8);
+}
+.feedDetails{
+    border:2px solid #ddd;border-radius: 0.5em;
+    height: 40vh;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.8);
+    overflow-y: scroll
+}
+
+.coverHeight {
+    max-height: 300px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.userName {
+    font-size: 3vw;
+}
+#profilePhoto{
+    left:-.8%;
+    bottom: -1.25vh
+}
+
+.profileHeight {
+    border: 0.5vw solid white;
+    border-radius: 5px;
+    box-shadow:box-shadow: 0 4px 10px 0 rgba(0,0,0,.7);
+}
+
+.rowStyle {
+    border-bottom: 1px solid #ddd;
+    margin-top: 1em !important;
+}
+.header{
+    text-align: center;
+    border: 8px solid white;
+    background: #b2bec3;
+    color: rgba(255, 107, 107,1.0);
+}
+.feedStyle{
+    display: flex;
+    flex-direction: column;
+}
+.feedStyel div h3{
+  border: 1px solid black;
+}
+.feedBox{
+    padding: 20px;    
+}
+
+.rowStyle div {
+    padding: 1em;
+}
+
+.p-4,.p-3{
+    top: -500px;
+    animation: spin 1.2s  ease-in forwards;
+}
+
+
+.circle{
+    width: 40px;
+    height: 40px;
+    margin: 20% auto;
+    position: relative;
+}
+.gtc{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gtc::before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    height: 20%;
+    background: #333;
+    border-radius: 100%;
+    animation: fadeCircle .9s infinite ease-in-out both;
+}
+.circle2{
+    transform: rotate(40deg);
+}
+.circle3{
+    transform: rotate(80deg);
+}
+.circle4{
+    transform: rotate(120deg);
+}
+.circle5{
+    transform: rotate(160deg);
+}
+.circle6{
+    transform: rotate(200deg);
+}
+.circle7{
+    transform: rotate(240deg);
+}
+.circle8{
+    transform: rotate(280deg);
+}
+.circle9{
+    transform: rotate(320deg);
+}
+.circle2::before{
+    animation-delay: -.8s;
+}
+.circle3::before{
+    animation-delay: -.7s;
+}
+.circle4::before{
+    animation-delay: -.6s;
+}
+.circle5::before{
+    animation-delay: -.5s;
+}
+.circle6::before{
+    animation-delay: -.4s;
+}
+.circle7::before{
+   animation-delay: -.3s;
+}
+.circle8::before{
+    animation-delay: -.2s;
+}
+.circle9::before{
+    animation-delay: -.1s;
+}
+@keyframes fadeCircle{
+    0%,39%,100%{opacity: 0;}
+    40%{
+        opacity: 1;
+    }
+}
+@keyframes spin{
+    0%{}
+    70%{transform: translateY(25px)}
+    100%{transform:translateY(45px)}
+}
